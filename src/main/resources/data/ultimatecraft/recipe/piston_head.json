@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:piston_ring_groove"
+    },
+    "X": {
+      "item": "ultimatecraft:aluminium_alloy"
+    }
+  },
+  "pattern": [
+    "#X#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:piston_head"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "ultimatecraft:connecting_rod_cap"
+    },
+    "A": {
+      "item": "ultimatecraft:connecting_rod_bearing"
+    }
+  },
+  "pattern": [
+    "A",
+    "F"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:big_end"
+  }
+}

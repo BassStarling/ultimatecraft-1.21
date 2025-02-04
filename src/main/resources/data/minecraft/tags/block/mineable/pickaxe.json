@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ultimatecraft:aluminium_block",
+    "ultimatecraft:cylinder_head",
+    "ultimatecraft:crusher",
+    "ultimatecraft:machining_block"
+  ]
+}

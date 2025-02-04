@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ultimatecraft:connecting_rod_bearing"
+    },
+    "D": {
+      "item": "ultimatecraft:small_end"
+    },
+    "F": {
+      "item": "ultimatecraft:rod"
+    },
+    "S": {
+      "item": "ultimatecraft:bush"
+    }
+  },
+  "pattern": [
+    "X ",
+    "F ",
+    "DS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:unfinished_connecting_rod"
+  }
+}

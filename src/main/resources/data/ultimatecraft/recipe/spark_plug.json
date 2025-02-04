@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:ignition_system"
+    },
+    "S": {
+      "item": "ultimatecraft:gasket"
+    },
+    "X": {
+      "item": "ultimatecraft:ignition_plug_accessories"
+    }
+  },
+  "pattern": [
+    "#",
+    "S",
+    "X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:spark_plug"
+  }
+}

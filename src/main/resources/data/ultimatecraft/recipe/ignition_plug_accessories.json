@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:insulator"
+    },
+    "S": {
+      "item": "ultimatecraft:terminal"
+    },
+    "X": {
+      "item": "ultimatecraft:housing"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:ignition_plug_accessories"
+  }
+}

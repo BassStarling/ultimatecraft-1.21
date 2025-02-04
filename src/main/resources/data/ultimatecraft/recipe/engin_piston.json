@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:compression_ring"
+    },
+    "X": {
+      "item": "ultimatecraft:piston_head"
+    },
+    "S": {
+      "item": "ultimatecraft:oil_ring"
+    },
+    "D": {
+      "item": "ultimatecraft:piston_boss"
+    },
+    "F": {
+      "item": "ultimatecraft:gudgeon_pin"
+    },
+    "A": {
+      "item": "ultimatecraft:aluminium_alloy"
+    }
+  },
+  "pattern": [
+    "SX#",
+    "DFD",
+    "A A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:engin_piston"
+  }
+}

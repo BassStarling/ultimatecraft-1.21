@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:crank_pin"
+    },
+    "X": {
+      "item": "ultimatecraft:crank_arm"
+    },
+    "D": {
+      "item": "ultimatecraft:balanceweight"
+    },
+    "F": {
+      "item": "ultimatecraft:crank_journal"
+    },
+    "S": {
+      "item": "ultimatecraft:journal_end"
+    },
+    "A": {
+      "item": "ultimatecraft:crank_journal_bearing"
+    },
+    "C": {
+      "item": "ultimatecraft:journal_bearing"
+    }
+  },
+  "pattern": [
+    "CX#",
+    "FS ",
+    "AD "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:crankshaft"
+  }
+}

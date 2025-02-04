@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ultimatecraft:thrust_plate"
+    },
+    "F": {
+      "item": "ultimatecraft:journal_bearing_cap"
+    },
+    "S": {
+      "item": "ultimatecraft:journal_bearing"
+    }
+  },
+  "pattern": [
+    "SX",
+    "F"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:crank_journal_bearing"
+  }
+}

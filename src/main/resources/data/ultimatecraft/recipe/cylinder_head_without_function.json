@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:spark_plug"
+    },
+    "X": {
+      "item": "ultimatecraft:valve_seat_ring"
+    },
+    "S": {
+      "item": "ultimatecraft:valve_guide"
+    },
+    "D": {
+      "item": "ultimatecraft:plug_cap"
+    },
+    "F": {
+      "item": "ultimatecraft:lower_spring_seat"
+    }
+  },
+  "pattern": [
+    "F F",
+    "SDS",
+    "X#X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:cylinder_head_without_function"
+  }
+}

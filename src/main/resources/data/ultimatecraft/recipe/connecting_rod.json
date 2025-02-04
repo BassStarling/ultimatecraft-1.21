@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:capbolt"
+    },
+    "X": {
+      "item": "ultimatecraft:big_end"
+    },
+    "D": {
+      "item": "ultimatecraft:nut"
+    },
+    "F": {
+      "item": "ultimatecraft:unfinished_connecting_rod"
+    }
+  },
+  "pattern": [
+    "X#",
+    "FD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:connecting_rod"
+  }
+}

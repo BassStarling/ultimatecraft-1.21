@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:center_electrode"
+    },
+    "S": {
+      "item": "ultimatecraft:screw"
+    },
+    "X": {
+      "item": "ultimatecraft:ground_electrode"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:ignition_system"
+  }
+}

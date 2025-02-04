@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ultimatecraft",
+	"version": "${version}",
+	"name": "UltimateCraft",
+	"description": "This Mod goal is [craft] the car!Made by Mono_Epic.You're about to be killed by the middle material.",
+	"authors": [
+		"Walt!"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/members/mono_epic/projects",
+		"sources": "https://www.curseforge.com/members/mono_epic/projects"
+	},
+	"license": "MIT",
+	"icon": "assets/ultimatecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.basssterling.ultimatecraft.UltimateCraft"
+		],
+		"fabric-datagen": [
+			"net.basssterling.ultimatecraft.UltimateCraftDataGenerator"
+		],
+		"client": [
+			"net.basssterling.ultimatecraft.UltimateCraftClient"
+		]
+	},
+	"mixins": [
+		"ultimatecraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

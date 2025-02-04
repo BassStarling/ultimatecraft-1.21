@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ultimatecraft:aluminium_alloy"
+    },
+    "S": {
+      "item": "ultimatecraft:ring_gear"
+    }
+  },
+  "pattern": [
+    " S ",
+    "S#S",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:fly_wheel"
+  }
+}

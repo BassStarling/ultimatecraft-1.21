@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ultimatecraft:block/cylinder_head",
+    "side": "ultimatecraft:block/cylinder_head_side",
+    "top": "ultimatecraft:block/cylinder_head"
+  }
+}
