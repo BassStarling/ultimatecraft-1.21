@@ -2,6 +2,7 @@ package net.basssterling.ultimatecraft.block;
 
 import net.basssterling.ultimatecraft.UltimateCraft;
 import net.basssterling.ultimatecraft.block.custom.Crusher;
+import net.basssterling.ultimatecraft.block.custom.Electrolyser;
 import net.basssterling.ultimatecraft.block.custom.MachiningBlock;
 import net.basssterling.ultimatecraft.block.custom.Sifter;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -22,6 +23,9 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModBlocks {
+    public static final Block ELECTROLYSER = registerBlock("electrolyser",
+            new Electrolyser(AbstractBlock.Settings.create().strength(5f)
+                    .requiresTool()));
 
     public static final Block MACHINING_BLOCK = registerBlock("machining_block",
             new MachiningBlock(AbstractBlock.Settings.create().strength(5f)
@@ -49,7 +53,7 @@ public class ModBlocks {
             new Crusher(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.ANVIL)));
 
-    public static final  Block SIFTER = registerBlock("sifter",
+    public static final Block SIFTER = registerBlock("sifter",
             new Sifter(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()){
     @Override
