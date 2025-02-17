@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "item/machining_tool",
-		"particle": "item_machining_tool"
+		"particle": "item/machining_tool"
 	},
 	"elements": [
 		{
