@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "item/machining_tool",
-		"particle": "item/machining_tool"
+		"0": "ultimatecraft:item/machining_tool",
+		"particle": "ultimatecraft:item/machining_tool"
 	},
 	"elements": [
 		{
