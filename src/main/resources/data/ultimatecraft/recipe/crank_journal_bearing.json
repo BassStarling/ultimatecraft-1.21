@@ -14,7 +14,7 @@
   },
   "pattern": [
     "SX",
-    "F"
+    "F "
   ],
   "result": {
     "count": 1,
