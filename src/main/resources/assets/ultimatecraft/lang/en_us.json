@@ -115,5 +115,5 @@
   "tooltip.ultimatecraft.spark_plug.shift_down.2": "§9in premixed combustion internal combustion engines",
   "tooltip.ultimatecraft.spark_plug.shift_down.3": "§9by igniting the air mixture filled in the combustion chamber",
   "tooltip.ultimatecraft.spark_plug.shift_down.4": "§9by electric discharge or red-hot metal",
-  "item.ultimatecraft.charged_lightning_rod": "Charged Lightning Rod"
+  "block.ultimatecraft.charged_lightning_rod": "Charged Lightning Rod"
 }

@@ -11,8 +11,8 @@
     }
   },
   "textures": {
-    "texture": "minecraft:block/lightning_rod",
-    "particle": "minecraft:block/lightning_rod"
+    "texture": "block/lightning_rod",
+    "particle": "block/lightning_rod"
   },
   "elements": [
     {   "from": [ 6, 12, 6 ],
