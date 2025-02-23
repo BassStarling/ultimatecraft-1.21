@@ -114,5 +114,6 @@
   "tooltip.ultimatecraft.spark_plug.shift_down.1": "§9点火プラグは予混合燃焼式内燃機関において、",
   "tooltip.ultimatecraft.spark_plug.shift_down.2": "§9燃焼室に満たされた混合気に電気放電や",
   "tooltip.ultimatecraft.spark_plug.shift_down.3": "§9赤熱した金属によって点火することにより、",
-  "tooltip.ultimatecraft.spark_plug.shift_down.4": "§9燃焼サイクルのきっかけを作る装置である"
+  "tooltip.ultimatecraft.spark_plug.shift_down.4": "§9燃焼サイクルのきっかけを作る装置である",
+  "item.ultimatecraft.charged_lightning_rod": "帯電した避雷針"
 }

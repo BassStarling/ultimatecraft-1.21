@@ -114,5 +114,6 @@
   "tooltip.ultimatecraft.spark_plug.shift_down.1": "§9A spark plug is a device that triggers the combustion cycle",
   "tooltip.ultimatecraft.spark_plug.shift_down.2": "§9in premixed combustion internal combustion engines",
   "tooltip.ultimatecraft.spark_plug.shift_down.3": "§9by igniting the air mixture filled in the combustion chamber",
-  "tooltip.ultimatecraft.spark_plug.shift_down.4": "§9by electric discharge or red-hot metal"
+  "tooltip.ultimatecraft.spark_plug.shift_down.4": "§9by electric discharge or red-hot metal",
+  "item.ultimatecraft.charged_lightning_rod": "Charged Lightning Rod"
 }
