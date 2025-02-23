@@ -23,6 +23,10 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModBlocks {
+    public static final Block CHARGED_LIGHTNING_ROD = registerBlock("charged_lightning_rod",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
     public static final Block ELECTROLYSER = registerBlock("electrolyser",
             new Electrolyser(AbstractBlock.Settings.create().strength(5f)
                     .requiresTool()));
@@ -56,11 +60,11 @@ public class ModBlocks {
     public static final Block SIFTER = registerBlock("sifter",
             new Sifter(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()){
-    @Override
-    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
-        tooltip.add(Text.translatable("tooltip.ultimatecraft.sifter.tooltip"));
-        super.appendTooltip(stack, context, tooltip, options);
-    }});
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+            tooltip.add(Text.translatable("tooltip.ultimatecraft.sifter.tooltip"));
+            super.appendTooltip(stack, context, tooltip, options);
+        }});
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
