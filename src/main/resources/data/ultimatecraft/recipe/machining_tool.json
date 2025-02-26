@@ -9,7 +9,7 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "minecraft:gold"
+      "item": "minecraft:gold_ingot"
     },
     "#": {
       "item": "ultimatecraft:charged_lightning_rod"
@@ -22,6 +22,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "ultimatecraft:ignition_system"
+    "id": "ultimatecraft:machining_tool"
   }
 }
