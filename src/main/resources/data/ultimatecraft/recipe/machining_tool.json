@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:gold"
+    },
+    "#": {
+      "item": "ultimatecraft:charged_lightning_rod"
+    }
+  },
+  "pattern": [
+    " XX",
+    "A#A",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:ignition_system"
+  }
+}
