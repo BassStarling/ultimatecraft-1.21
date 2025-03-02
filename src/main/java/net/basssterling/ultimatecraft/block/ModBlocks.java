@@ -23,6 +23,7 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModBlocks {
+
     public static final Block CHARGED_LIGHTNING_ROD = registerBlock("charged_lightning_rod",
             new Block(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()));
