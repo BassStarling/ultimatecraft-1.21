@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "ultimatecraft:engin_piston",
+      "count": 1
+    },
+    "title": "Ultimatecraft",
+    "description": "test",
+    "background": "ultimatecraft:textures/block/aluminium_block.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hiddin": false
+  },
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

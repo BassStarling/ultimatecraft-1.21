@@ -1,0 +1,1 @@
+execute positioned as @e[type=minecraft:lightning_bolt] if entity @p[distance=..25] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 ultimatecraft:charged_lightning_rod replace lightning_rod

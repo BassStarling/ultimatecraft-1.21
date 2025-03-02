@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "ultimatecraft:sifter",
+      "count": 1
+    },
+    "title": "WHAT",
+    "description": "test",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ultimatecraft:ultimatecraft/root",
+  "criteria": {
+    "aluminium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatecraft:aluminium_alloy"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "aluminium"
+    ]
+  ]
+}
