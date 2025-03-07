@@ -4,8 +4,12 @@
       "id": "ultimatecraft:sifter",
       "count": 1
     },
-    "title": "advancement.aluminium.ultimatecraft.title",
-    "description": "advancement.aluminium.ultimatecraft.description",
+    "title": {
+      "translate":"advancement.aluminium.ultimatecraft.title"
+    },
+    "description": {
+      "translate": "advancement.aluminium.ultimatecraft.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
