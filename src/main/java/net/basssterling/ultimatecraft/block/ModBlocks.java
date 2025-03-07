@@ -2,7 +2,6 @@ package net.basssterling.ultimatecraft.block;
 
 import net.basssterling.ultimatecraft.UltimateCraft;
 import net.basssterling.ultimatecraft.block.custom.Crusher;
-import net.basssterling.ultimatecraft.block.custom.Electrolyser;
 import net.basssterling.ultimatecraft.block.custom.MachiningBlock;
 import net.basssterling.ultimatecraft.block.custom.Sifter;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -26,10 +25,6 @@ public class ModBlocks {
 
     public static final Block CHARGED_LIGHTNING_ROD = registerBlock("charged_lightning_rod",
             new Block(AbstractBlock.Settings.create().strength(3f)
-                    .requiresTool()));
-
-    public static final Block ELECTROLYSER = registerBlock("electrolyser",
-            new Electrolyser(AbstractBlock.Settings.create().strength(5f)
                     .requiresTool()));
 
     public static final Block MACHINING_BLOCK = registerBlock("machining_block",

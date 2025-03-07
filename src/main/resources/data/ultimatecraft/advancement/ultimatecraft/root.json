@@ -5,7 +5,7 @@
       "count": 1
     },
     "title": "Ultimatecraft",
-    "description": "test",
+    "description": "advancement.root.ultimatecraft.description",
     "background": "ultimatecraft:textures/block/aluminium_block.png",
     "frame": "task",
     "show_toast": false,

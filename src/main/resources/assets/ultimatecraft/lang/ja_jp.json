@@ -1,8 +1,4 @@
 {
-  "advancements.ultimatecraft.aluminium_alloy.description": "ここから車を作ろう",
-  "advancements.ultimatecraft.aluminium_alloy.title": "ん？",
-  "advancements.ultimatecraft.ultimatecraft.description": "究極な「craft」のはじまり",
-  "advancements.ultimatecraft.ultimatecraft.title": "UltimateCraft",
   "block.ultimatecraft.aluminium_block": "アルミニウムブロック",
   "block.ultimatecraft.crusher": "粉砕機",
   "block.ultimatecraft.cylinder_head": "シリンダーヘッド",
@@ -115,5 +111,8 @@
   "tooltip.ultimatecraft.spark_plug.shift_down.2": "§9燃焼室に満たされた混合気に電気放電や",
   "tooltip.ultimatecraft.spark_plug.shift_down.3": "§9赤熱した金属によって点火することにより、",
   "tooltip.ultimatecraft.spark_plug.shift_down.4": "§9燃焼サイクルのきっかけを作る装置である",
-  "block.ultimatecraft.charged_lightning_rod": "帯電した避雷針"
+  "block.ultimatecraft.charged_lightning_rod": "帯電した避雷針",
+  "advancement.root.ultimatecraft.description": "すべてはここから始まる",
+  "advancement.aluminium.ultimatecraft.title": "UltimateCraftへようこそ!",
+  "advancement.aluminium.ultimatecraft.description": "UltimateCraftのチュートリアルを修了する"
 }
