@@ -96,6 +96,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TRANSISTOR);
                         entries.add(ModItems.CYLINDER_HEAD_WITHOUT_FUNCTION);
                         entries.add(ModBlocks.CHARGED_LIGHTNING_ROD);
+                        entries.add(ModBlocks.ASSEMBLY_TABLE);
                     })
                     .build());
 

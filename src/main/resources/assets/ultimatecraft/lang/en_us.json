@@ -118,5 +118,6 @@
   "block.ultimatecraft.charged_lightning_rod": "Charged Lightning Rod",
   "advancement.root.ultimatecraft.description": "All are start here.",
   "advancement.aluminium.ultimatecraft.title": "Welcome to UltimateCraft!",
-  "advancement.aluminium.ultimatecraft.description": "Complete the UltimateCraft tutrial."
+  "advancement.aluminium.ultimatecraft.description": "Complete the UltimateCraft tutrial.",
+  "block.ultimatecraft.assembly_table": "Assembly Table"
 }

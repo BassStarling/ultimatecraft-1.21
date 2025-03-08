@@ -1,6 +1,7 @@
 package net.basssterling.ultimatecraft;
 
 import net.basssterling.ultimatecraft.block.ModBlocks;
+import net.basssterling.ultimatecraft.block.entity.ModBlockEntities;
 import net.basssterling.ultimatecraft.item.ModItemGroups;
 import net.basssterling.ultimatecraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -20,7 +21,7 @@ public class UltimateCraft implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
+		ModBlockEntities.registerBlockEntities();
 		FuelRegistry.INSTANCE.add(ModItems.PETROLEUM, 20000);
 	}
 }

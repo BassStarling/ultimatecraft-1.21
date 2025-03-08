@@ -1,6 +1,7 @@
 package net.basssterling.ultimatecraft.block;
 
 import net.basssterling.ultimatecraft.UltimateCraft;
+import net.basssterling.ultimatecraft.block.custom.AssemblyTable;
 import net.basssterling.ultimatecraft.block.custom.Crusher;
 import net.basssterling.ultimatecraft.block.custom.MachiningBlock;
 import net.basssterling.ultimatecraft.block.custom.Sifter;
@@ -18,10 +19,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.BlockCollisionSpliterator;
 
 import java.util.List;
 
 public class ModBlocks {
+
+    public static final Block ASSEMBLY_TABLE = registerBlock("assembly_table",
+            new AssemblyTable(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
 
     public static final Block CHARGED_LIGHTNING_ROD = registerBlock("charged_lightning_rod",
             new Block(AbstractBlock.Settings.create().strength(3f)
