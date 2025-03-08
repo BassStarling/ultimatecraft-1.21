@@ -119,5 +119,6 @@
   "advancement.root.ultimatecraft.description": "All are start here.",
   "advancement.aluminium.ultimatecraft.title": "Welcome to UltimateCraft!",
   "advancement.aluminium.ultimatecraft.description": "Complete the UltimateCraft tutrial.",
-  "block.ultimatecraft.assembly_table": "Assembly Table"
+  "block.ultimatecraft.assembly_table": "Assembly Table",
+  "assembly.ultimatecraft.displayname": "Assembly Table"
 }
