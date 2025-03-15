@@ -2,7 +2,9 @@ package net.basssterling.ultimatecraft.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.basssterling.ultimatecraft.block.entity.custom.AssemblyBlockEntity;
-import net.minecraft.block.*;
+import net.minecraft.block.BlockEntityProvider;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -14,13 +16,13 @@ import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class AssemblyTable extends BlockWithEntity implements BlockEntityProvider {
-    private static final VoxelShape SHAPE =
-            Block.createCuboidShape(2, 0, 2, 14, 13, 14);
+
+    private static final VoxelShape SHAPE = BlockWithEntity.createCuboidShape(2,0,2,14,13,14);
+
     public static final MapCodec<AssemblyTable> CODEC = AssemblyTable.createCodec(AssemblyTable::new);
 
     public AssemblyTable(Settings settings) {
@@ -28,24 +30,14 @@ public class AssemblyTable extends BlockWithEntity implements BlockEntityProvide
     }
 
     @Override
-    protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
-    }
-
-    @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return CODEC;
+        return null;
     }
 
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
         return new AssemblyBlockEntity(pos, state);
-    }
-
-    @Override
-    protected BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.MODEL;
     }
 
     @Override
@@ -61,28 +53,27 @@ public class AssemblyTable extends BlockWithEntity implements BlockEntityProvide
     }
 
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
-                                             PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(world.getBlockEntity(pos) instanceof AssemblyBlockEntity assembryBlockEntity) {
-            if (assembryBlockEntity.isEmpty() && !stack.isEmpty()) {
-                assembryBlockEntity.setStack(0, stack.copyWithCount(1));
+    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world,
+                                             BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if(world.getBlockEntity(pos) instanceof AssemblyBlockEntity assemblyBlockEntity) {
+            if(assemblyBlockEntity.isEmpty() && !stack.isEmpty()) {
+                assemblyBlockEntity.setStack(0, stack.copyWithCount(1));
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 2f);
                 stack.decrement(1);
 
-                assembryBlockEntity.markDirty();
+                assemblyBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
-            } else if (stack.isEmpty() && !player.isSneaking()) {
-                ItemStack stackOnPedestal = assembryBlockEntity.getStack(0);
+            } else if(stack.isEmpty() && !player.isSneaking()) {
+                ItemStack stackOnPedestal = assemblyBlockEntity.getStack(0);
                 player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
-                assembryBlockEntity.clear();
+                assemblyBlockEntity.clear();
 
-                assembryBlockEntity.markDirty();
+                assemblyBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
-            } else if (player.isSneaking() && !world.isClient()) {
-                player.openHandledScreen(assembryBlockEntity);
             }
         }
-        return ItemActionResult.SUCCESS;
+
+        return super.onUseWithItem(stack, state, world, pos, player, hand, hit);
     }
 }
