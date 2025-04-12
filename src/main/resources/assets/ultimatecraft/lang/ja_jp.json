@@ -132,5 +132,5 @@
   "item.ultimatecraft.trona": "トロナ",
   "block.ultimatecraft.trona_deepslate_ore": "深層トロナ鉱石",
   "tooltip.ultimatecraft.TRONA_DEEPSLATE_ORE.tooltip": "そんなものは存在しない(本来トロナは河川域にのみ生成されるため)",
-  "tooltip.ultimatecraft.trona_block": "トロナブロック"
+  "block.ultimatecraft.trona_block": "トロナブロック"
 }
