@@ -8,6 +8,7 @@ import net.basssterling.ultimatecraft.block.custom.Sifter;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,11 +20,51 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.BlockCollisionSpliterator;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 import java.util.List;
 
 public class ModBlocks {
+    public static final Block TRONA_BLOCK = registerBlock("trona_block",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
+    public static final Block TRONA_ORE = registerBlock("trona_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
+    public static final Block TRONA_DEEPSLATE_ORE = registerBlock("trona_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(4f)
+                            .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)){
+                @Override
+                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+                    tooltip.add(Text.translatable("tooltip.ultimatecraft.TRONA_DEEPSLATE_ORE.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, options);
+                }});
+
+    public static final Block LIME = registerBlock("lime",
+            new Block(AbstractBlock.Settings.create().strength(2f)
+                    .requiresTool().sounds(BlockSoundGroup.TUFF)));
+
+    public static final Block STRAINER = registerBlock("strainer",
+            new Block(AbstractBlock.Settings.create().strength(2f)
+                    .requiresTool()){
+                @Override
+                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+                    tooltip.add(Text.translatable("tooltip.ultimatecraft.strainer.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, options);
+                }});
+
+    public static  final Block TESTBLOCK = registerBlock("testblock",
+            new Block(AbstractBlock.Settings.create().strength(2f)
+                    .requiresTool()){
+                @Override
+                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+                    tooltip.add(Text.translatable("tooltip.ultimatecraft.strainer.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, options);
+                }});
 
     public static final Block ASSEMBLY_TABLE = registerBlock("assembly_table",
             new AssemblyTable(AbstractBlock.Settings.create().strength(3f)

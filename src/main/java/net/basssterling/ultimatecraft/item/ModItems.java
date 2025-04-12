@@ -16,6 +16,45 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
+    public static final Item TRONA = registerItem("trona",new Item(new Item.Settings()));
+
+    public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate",new Item(new Item.Settings()));
+
+    public static final Item QUICK_LIME = registerItem("quick_lime",new Item(new Item.Settings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.quick_lime"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.quick_lime"));
+            }
+        }
+    });
+
+    public static final Item SLAKED_LIME = registerItem("slaked_lime",new Item(new Item.Settings()){
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.slaked_lime"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.slaked_lime"));
+            }
+        }
+    });
+
+    public static final Item SALT = registerItem("salt",new Item(new Item.Settings()));
+
+    public static final Item FABRIC_FILTER = registerItem("fabric_filter", new Item(new Item.Settings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.fabric_filter"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.fabric_filter"));
+            }
+        }
+    });
+
     public static final Item CYLINDER_HEAD_WITHOUT_FUNCTION = registerItem("cylinder_head_without_function", new Item(new Item.Settings()));
 
     public static final Item TRANSISTOR = registerItem("transistor", new Item(new Item.Settings()));

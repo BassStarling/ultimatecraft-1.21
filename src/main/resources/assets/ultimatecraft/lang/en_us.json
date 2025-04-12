@@ -120,5 +120,21 @@
   "advancement.aluminium.ultimatecraft.title": "Welcome to UltimateCraft!",
   "advancement.aluminium.ultimatecraft.description": "Complete the UltimateCraft tutrial.",
   "block.ultimatecraft.assembly_table": "Assembly Table",
-  "assembly.ultimatecraft.displayname": "Assembly Table"
+  "assembly.ultimatecraft.displayname": "Assembly Table",
+  "tooltip.ultimatecraft.fabric_filter": "Filtration machine filter",
+  "item.ultimatecraft.fabric_filter": "Fabric Filter",
+  "block.ultimatecraft.strainer": "Strainer",
+  "tooltip.ultimatecraft.strainer.tooltip": "Extracts the purest salt",
+  "item.ultimatecraft.salt": "Salt",
+  "block.ultimatecraft.lime": "Lime Block",
+  "item.ultimatecraft.slaked_lime": "Slaked Lime",
+  "item.ultimatecraft.quick_lime": "Quick Lime",
+  "tooltip.ultimatecraft.quick_lime": "Also called Calcium oxide",
+  "tooltip.ultimatecraft.slaked_lime": "Also called Calcium hydroxide",
+  "block.ultimatecraft.trona_ore": "Trona Ore",
+  "item.ultimatecraft.sodium_carbonate": "Sodium Carbonate",
+  "item.ultimatecraft.trona": "Trona",
+  "block.ultimatecraft.trona_deepslate_ore": "Trona Deepslate Ore",
+  "tooltip.ultimatecraft.TRONA_DEEPSLATE_ORE.tooltip": "No such thing exists.",
+  "tooltip.ultimatecraft.trona_block": "Trona Block"
 }

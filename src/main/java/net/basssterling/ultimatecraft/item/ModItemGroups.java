@@ -97,6 +97,18 @@ public class ModItemGroups {
                         entries.add(ModItems.CYLINDER_HEAD_WITHOUT_FUNCTION);
                         entries.add(ModBlocks.CHARGED_LIGHTNING_ROD);
                         entries.add(ModBlocks.ASSEMBLY_TABLE);
+                        entries.add(ModBlocks.TESTBLOCK);
+                        entries.add(ModItems.FABRIC_FILTER);
+                        entries.add(ModBlocks.STRAINER);
+                        entries.add(ModItems.SALT);
+                        entries.add(ModBlocks.LIME);
+                        entries.add(ModItems.SLAKED_LIME);
+                        entries.add(ModItems.QUICK_LIME);
+                        entries.add(ModBlocks.TRONA_ORE);
+                        entries.add(ModItems.SODIUM_CARBONATE);
+                        entries.add(ModItems.TRONA);
+                        entries.add(ModBlocks.TRONA_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.TRONA_BLOCK);
                     })
                     .build());
 

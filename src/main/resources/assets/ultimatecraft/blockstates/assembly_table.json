@@ -1,7 +1,7 @@
 {
   "variants": {
     "":{
-      "model": "ultimatecraft:block/aluminium_block"
+      "model": "ultimatecraft:block/assembly_table"
     }
   }
 }

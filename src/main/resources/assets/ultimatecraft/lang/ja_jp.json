@@ -116,5 +116,21 @@
   "advancement.aluminium.ultimatecraft.title": "UltimateCraftへようこそ!",
   "advancement.aluminium.ultimatecraft.description": "UltimateCraftのチュートリアルを修了する",
   "block.ultimatecraft.assembly_table": "組み立て台",
-  "assembly.ultimatecraft.displayname": "組み立て台"
+  "assembly.ultimatecraft.displayname": "組み立て台",
+  "tooltip.ultimatecraft.fabric_filter": "濾過器に取り付けるための濾過フィルター",
+  "item.ultimatecraft.fabric_filter": "濾過フィルター",
+  "block.ultimatecraft.strainer": "濾過器",
+  "tooltip.ultimatecraft.strainer.tooltip": "純度の高い塩を抽出するのに使用します",
+  "item.ultimatecraft.salt": "塩(工業用)",
+  "block.ultimatecraft.lime": "石灰ブロック",
+  "item.ultimatecraft.slaked_lime": "消石灰",
+  "item.ultimatecraft.quick_lime": "生石灰",
+  "tooltip.ultimatecraft.quick_lime": "酸化カルシウムとも呼ばれる",
+  "tooltip.ultimatecraft.slaked_lime": "水酸化カルシウムとも呼ばれる",
+  "block.ultimatecraft.trona_ore": "トロナ鉱石",
+  "item.ultimatecraft.sodium_carbonate": "炭酸ナトリウム",
+  "item.ultimatecraft.trona": "トロナ",
+  "block.ultimatecraft.trona_deepslate_ore": "深層トロナ鉱石",
+  "tooltip.ultimatecraft.TRONA_DEEPSLATE_ORE.tooltip": "そんなものは存在しない(本来トロナは河川域にのみ生成されるため)",
+  "tooltip.ultimatecraft.trona_block": "トロナブロック"
 }

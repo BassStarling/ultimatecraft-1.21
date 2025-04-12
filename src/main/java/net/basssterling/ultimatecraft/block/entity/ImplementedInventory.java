@@ -1,5 +1,8 @@
 package net.basssterling.ultimatecraft.block.entity;
 
+import net.basssterling.ultimatecraft.block.entity.custom.AssemblyBlockEntity;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.Inventory;
@@ -8,7 +11,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.collection.DefaultedList;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -24,7 +29,6 @@ import java.util.List;
  * License: <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
  * @author Juuz
  */
-@FunctionalInterface
 public interface ImplementedInventory extends SidedInventory {
     /**
      * Gets the item list of this inventory.
@@ -41,7 +45,21 @@ public interface ImplementedInventory extends SidedInventory {
      * @return a new inventory
      */
     static ImplementedInventory of(DefaultedList<ItemStack> items) {
-        return () -> items;
+        return new ImplementedInventory() {
+            private final DefaultedList<ItemStack> inv = items;
+
+            @Override
+            public DefaultedList<ItemStack> getItems() {
+                return inv;
+            }
+
+            @Override
+            public void tick(World world, BlockPos pos, BlockState state, BlockEntity blockEntity, AssemblyBlockEntity be) {
+
+            }
+
+            // 他にも必要ならメソッドをオーバーライド
+        };
     }
 
     /**
@@ -211,4 +229,6 @@ public interface ImplementedInventory extends SidedInventory {
     default boolean canPlayerUse(PlayerEntity player) {
         return true;
     }
+
+    void tick(World world, BlockPos pos, BlockState state, BlockEntity blockEntity, AssemblyBlockEntity be);
 }
