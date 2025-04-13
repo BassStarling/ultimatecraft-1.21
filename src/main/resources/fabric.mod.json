@@ -3,13 +3,13 @@
 	"id": "ultimatecraft",
 	"version": "${version}",
 	"name": "UltimateCraft",
-	"description": "This Mod goal is [craft] the car!Made by Mono_Epic.You're about to be killed by the middle material.",
+	"description": "Thank you playing for this Mod!",
 	"authors": [
-		"Walt!"
+		"Product and Design:Mono_Epic\nTexture Design:Chubby"
 	],
 	"contact": {
-		"homepage": "https://www.curseforge.com/members/mono_epic/projects",
-		"sources": "https://www.curseforge.com/members/mono_epic/projects"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/monoultimatecraft",
+		"sources": "https://github.com/BassStarling/ultimatecraft-1.21"
 	},
 	"license": "MIT",
 	"icon": "assets/ultimatecraft/icon.png",
