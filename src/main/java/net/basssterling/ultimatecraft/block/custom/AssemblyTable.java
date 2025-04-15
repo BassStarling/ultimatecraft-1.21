@@ -4,7 +4,6 @@ import com.mojang.serialization.MapCodec;
 import net.basssterling.ultimatecraft.block.entity.custom.AssemblyBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
@@ -86,20 +85,5 @@ public class AssemblyTable extends BlockWithEntity implements BlockEntityProvide
             }
         }
         return ItemActionResult.SUCCESS;
-    }
-//以前までgetTickerの仕事をしていた。現役で働いているcheckTypeのものも実装されてはいるが、実際には働いていない。
-//    @Override
-//    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-//        if (type == ModBlockEntities.ASSEMBLY_BE) {
-//            return (world1, pos, state1, be) -> {
-//                if (be instanceof AssemblyBlockEntity entity) {
-//                    entity.tick(world1,pos,state1); // インスタンスメソッドとして呼び出し
-//                }
-//            };
-//        }
-//        return null;
-//    }
-    public static <T extends BlockEntity> boolean checkType(BlockEntityType<T> type, BlockEntityType<?> expectedType) {
-        return type == expectedType;
     }
 }

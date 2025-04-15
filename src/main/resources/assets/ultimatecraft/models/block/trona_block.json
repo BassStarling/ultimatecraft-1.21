@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ultimatecraft:block/machining_block"
+    "all": "ultimatecraft:block/trona_block"
   }
 }
