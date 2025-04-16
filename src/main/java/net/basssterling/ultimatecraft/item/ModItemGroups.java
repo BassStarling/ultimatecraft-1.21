@@ -109,6 +109,10 @@ public class ModItemGroups {
                         entries.add(ModItems.TRONA);
                         entries.add(ModBlocks.TRONA_DEEPSLATE_ORE);
                         entries.add(ModBlocks.TRONA_BLOCK);
+                        entries.add(ModItems.RAW_BAUXITE);
+                        entries.add(ModBlocks.RAW_BAUXITE_BLOCK);
+                        entries.add(ModBlocks.BAUXITE_ORE);
+                        entries.add(ModBlocks.BAUXITE_DEEPSLATE_ORE);
                     })
                     .build());
 

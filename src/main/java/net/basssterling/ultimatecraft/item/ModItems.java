@@ -16,6 +16,8 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
+    public static final Item RAW_BAUXITE = registerItem("raw_bauxite",new Item(new Item.Settings()));
+
     public static final Item TRONA = registerItem("trona",new Item(new Item.Settings()));
 
     public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate",new Item(new Item.Settings()));

@@ -25,6 +25,18 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import java.util.List;
 
 public class ModBlocks {
+    public static final Block BAUXITE_ORE = registerBlock("bauxite_ore",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
+    public static final Block BAUXITE_DEEPSLATE_ORE = registerBlock("bauxite_deepslate_ore",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
+    public static final Block RAW_BAUXITE_BLOCK = registerBlock("raw_bauxite_block",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
     public static final Block TRONA_BLOCK = registerBlock("trona_block",
             new Block(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()));

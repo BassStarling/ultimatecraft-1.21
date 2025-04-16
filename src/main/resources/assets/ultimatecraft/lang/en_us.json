@@ -136,5 +136,9 @@
   "item.ultimatecraft.trona": "Trona",
   "block.ultimatecraft.trona_deepslate_ore": "Trona Deepslate Ore",
   "tooltip.ultimatecraft.TRONA_DEEPSLATE_ORE.tooltip": "No such thing exists.",
-  "block.ultimatecraft.trona_block": "Trona Block"
+  "block.ultimatecraft.trona_block": "Trona Block",
+  "block.ultimatecraft.raw_bauxite_block":"Raw Bauxite Block",
+  "block.ultimatecraft.bauxite_ore":"Bauxite Ore",
+  "block.ultimatecraft.bauxite_deepslate_ore":"Bauxite Deepslate Ore",
+  "item.ultimatecraft.raw_bauxite":"Raw Bauxite"
 }
