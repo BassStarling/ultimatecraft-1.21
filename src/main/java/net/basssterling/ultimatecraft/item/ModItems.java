@@ -16,7 +16,19 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
-    public static final Item RAW_BAUXITE = registerItem("raw_bauxite",new Item(new Item.Settings()));
+    public static final Item RAW_BAUXITE = registerItem("raw_bauxite",new Item(new Item.Settings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown.1"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown.2"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.1"));
+            }
+        }
+    });
 
     public static final Item TRONA = registerItem("trona",new Item(new Item.Settings()));
 

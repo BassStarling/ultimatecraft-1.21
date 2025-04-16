@@ -10,6 +10,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.SlabBlock;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -27,11 +28,35 @@ import java.util.List;
 public class ModBlocks {
     public static final Block BAUXITE_ORE = registerBlock("bauxite_ore",
             new Block(AbstractBlock.Settings.create().strength(3f)
-                    .requiresTool()));
+                    .requiresTool()) {
+                @Override
+                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown"));
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown.1"));
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown.2"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite"));
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.1"));
+                    }
+                }
+            });
 
     public static final Block BAUXITE_DEEPSLATE_ORE = registerBlock("bauxite_deepslate_ore",
             new Block(AbstractBlock.Settings.create().strength(3f)
-                    .requiresTool()));
+                    .requiresTool()) {
+                @Override
+                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown"));
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown.1"));
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.shiftdown.2"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite"));
+                        tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.1"));
+                    }
+                }
+            });
 
     public static final Block RAW_BAUXITE_BLOCK = registerBlock("raw_bauxite_block",
             new Block(AbstractBlock.Settings.create().strength(3f)

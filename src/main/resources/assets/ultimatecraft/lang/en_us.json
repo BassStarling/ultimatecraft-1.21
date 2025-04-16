@@ -140,5 +140,10 @@
   "block.ultimatecraft.raw_bauxite_block":"Raw Bauxite Block",
   "block.ultimatecraft.bauxite_ore":"Bauxite Ore",
   "block.ultimatecraft.bauxite_deepslate_ore":"Bauxite Deepslate Ore",
-  "item.ultimatecraft.raw_bauxite":"Raw Bauxite"
+  "item.ultimatecraft.raw_bauxite":"Raw Bauxite",
+  "tooltip.ultimatecraft.bauxite": "A type of residual deposit",
+  "tooltip.ultimatecraft.bauxite.1": "§9pless shift more information",
+  "tooltip.ultimatecraft.bauxite.shiftdown": "A type of residual deposit",
+  "tooltip.ultimatecraft.bauxite.shiftdown.1": "§9It is grown only in tropical",
+  "tooltip.ultimatecraft.bauxite.shiftdown.2": "§9or formerly tropical regions"
 }
