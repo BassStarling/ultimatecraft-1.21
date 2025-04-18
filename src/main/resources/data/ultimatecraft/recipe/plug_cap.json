@@ -1,23 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
-      "item": "ultimatecraft:igniter"
-    },
-    "X": {
-      "item": "ultimatecraft:transistor"
-    },
-    "S": {
-      "item": "ultimatecraft:ignition_coil"
-    }
-  },
-  "pattern": [
-    "#X",
-    "S "
+  "ingredients": [
+    { "item": "ultimatecraft:igniter" },
+    { "item": "ultimatecraft:transistor" },
+    { "item": "ultimatecraft:ignition_coil" }
   ],
   "result": {
-    "count": 1,
-    "id": "ultimatecraft:plug_cap"
+    "item": "ultimatecraft:plug_cap",
+    "count": 1
   }
 }

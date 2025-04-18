@@ -1,7 +1,16 @@
 {
   "replace": false,
   "values": [
+    "ultimatecraft:aluminium_block",
+    "ultimatecraft:cylinder_head",
+    "ultimatecraft:machining_block",
+    "ultimatecraft:assembly_table",
+    "ultimatecraft:trona_ore",
     "ultimatecraft:crusher",
-    "ultimatecraft:lime"
+    "ultimatecraft:trona_deepslate_ore",
+    "ultimatecraft:trona_block",
+    "ultimatecraft:bauxite_ore",
+    "ultimatecraft:bauxite_deepslate_ore",
+    "ultimatecraft:raw_bauxite_block"
   ]
 }

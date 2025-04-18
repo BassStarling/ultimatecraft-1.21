@@ -27,7 +27,7 @@ import java.util.List;
 
 public class ModBlocks {
     public static final Block BAUXITE_ORE = registerBlock("bauxite_ore",
-            new Block(AbstractBlock.Settings.create().strength(3f)
+            new Block(AbstractBlock.Settings.create().strength(2f)
                     .requiresTool()) {
                 @Override
                 public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {

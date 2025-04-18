@@ -21,19 +21,24 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> TROA_ORE_KEY = registerKey("troa_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> LIME_KEY = registerKey("lime");
+    public static final RegistryKey<ConfiguredFeature<?,?>> BAUXITE_KEY = registerKey("bauxite");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest clayReplacebles = new BlockMatchRuleTest(Blocks.CLAY);
         RuleTest limeReplacebles = new BlockMatchRuleTest(Blocks.GRAVEL);
+        RuleTest bauxiteReplacebles = new BlockMatchRuleTest(Blocks.STONE);
 
         List<OreFeatureConfig.Target> overworldTroaOres =
                 List.of(OreFeatureConfig.createTarget(clayReplacebles, ModBlocks.TRONA_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> overworldLimes =
                 List.of(OreFeatureConfig.createTarget(limeReplacebles, ModBlocks.LIME.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldBauxites =
+                List.of(OreFeatureConfig.createTarget(bauxiteReplacebles, ModBlocks.BAUXITE_ORE.getDefaultState()));
 
 
         register(context, TROA_ORE_KEY,Feature.ORE, new OreFeatureConfig(overworldTroaOres,12));
         register(context, LIME_KEY,Feature.ORE,new OreFeatureConfig(overworldLimes,12));
+        register(context, BAUXITE_KEY,Feature.ORE,new OreFeatureConfig(overworldBauxites,12));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

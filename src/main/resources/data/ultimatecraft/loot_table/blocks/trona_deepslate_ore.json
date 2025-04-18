@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "minecraft:trona_deepslate_ore"
+              "name": "ultimatecraft:trona_deepslate_ore"
             },
             {
               "type": "minecraft:item",
@@ -52,7 +52,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:trona"
+              "name": "ultimatecraft:trona"
             }
           ]
         }
@@ -60,5 +60,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/trona_deepslate_ore"
+  "random_sequence": "ultimatecraft:blocks/trona_deepslate_ore"
 }

@@ -9,6 +9,9 @@
     "ultimatecraft:trona_ore",
     "ultimatecraft:lime",
     "ultimatecraft:trona_deepslate_ore",
-    "ultimatecraft:trona_block"
+    "ultimatecraft:trona_block",
+    "ultimatecraft:bauxite_ore",
+    "ultimatecraft:bauxite_deepslate_ore",
+    "ultimatecraft:raw_bauxite_block"
   ]
 }
