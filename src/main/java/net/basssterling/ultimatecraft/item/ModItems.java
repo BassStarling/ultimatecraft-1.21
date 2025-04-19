@@ -4,9 +4,7 @@ import net.basssterling.ultimatecraft.UltimateCraft;
 import net.basssterling.ultimatecraft.item.custom.MachiningItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -16,6 +14,11 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
+    public static final Item GHASTGUN = registerItem("ghastgun",new BowItem(new Item.Settings().maxDamage(100)));
+
+    public static final Item YARI = registerItem("yari",new SwordItem(ModToolMaterials.ALUMINIUM,new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ALUMINIUM,10,-3.0f))));
+
     public static final Item RAW_BAUXITE = registerItem("raw_bauxite",new Item(new Item.Settings()) {
         @Override
         public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {

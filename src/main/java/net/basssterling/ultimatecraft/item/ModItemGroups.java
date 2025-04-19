@@ -113,6 +113,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_BAUXITE_BLOCK);
                         entries.add(ModBlocks.BAUXITE_ORE);
                         entries.add(ModBlocks.BAUXITE_DEEPSLATE_ORE);
+                        entries.add(ModItems.YARI);
+                        entries.add(ModItems.GHASTGUN);
                     })
                     .build());
 

@@ -145,5 +145,7 @@
   "tooltip.ultimatecraft.bauxite.1": "§9pless shift more information",
   "tooltip.ultimatecraft.bauxite.shiftdown": "A type of residual deposit",
   "tooltip.ultimatecraft.bauxite.shiftdown.1": "§9It is grown only in tropical",
-  "tooltip.ultimatecraft.bauxite.shiftdown.2": "§9or formerly tropical regions"
+  "tooltip.ultimatecraft.bauxite.shiftdown.2": "§9or formerly tropical regions",
+  "item.ultimatecraft.yari": "Yari",
+  "item.ultimatecraft.ghastgun": "ghastgun"
 }
