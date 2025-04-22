@@ -8,7 +8,6 @@ import net.basssterling.ultimatecraft.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

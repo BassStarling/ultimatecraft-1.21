@@ -97,7 +97,6 @@ public class ModItemGroups {
                         entries.add(ModItems.CYLINDER_HEAD_WITHOUT_FUNCTION);
                         entries.add(ModBlocks.CHARGED_LIGHTNING_ROD);
                         entries.add(ModBlocks.ASSEMBLY_TABLE);
-                        entries.add(ModBlocks.TESTBLOCK);
                         entries.add(ModItems.FABRIC_FILTER);
                         entries.add(ModBlocks.STRAINER);
                         entries.add(ModItems.SALT);
@@ -115,9 +114,28 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BAUXITE_DEEPSLATE_ORE);
                         entries.add(ModItems.YARI);
                         entries.add(ModItems.GHASTGUN);
+                        entries.add(ModItems.PURE_SODIUM_ALUMINATE);
+                        entries.add(ModItems.SODIUM_ALUMINATE);
+                        entries.add(ModItems.SODIUM_HYDROXIDE_IN_BUCKET);
+                        entries.add(ModItems.ALUMINIUM_OXIDE);
+                        entries.add(ModItems.ALUMINIUM_HYDROXIDE);
+                        entries.add(ModItems.TEMPORARY_ITEM_F);
+                        entries.add(ModItems.MELTED_BAUXITE_IN_BUCKET);
                     })
                     .build());
-
+    public static final ItemGroup UCTAB_GROUPS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(UltimateCraft.MOD_ID, "uctab"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GHASTGUN))
+                    .displayName(Text.translatable("itemgroup.ultimatecraft.uctab"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.GHASTGUN);
+                        entries.add(ModItems.YARI);
+                        entries.add(ModItems.MACHINING_TOOL);
+                        entries.add(ModBlocks.MACHINING_BLOCK);
+                        entries.add(ModBlocks.CRUSHER);
+                        entries.add(ModBlocks.SIFTER);
+                    })
+                    .build());
     public static void registerModItemGroups() {
         UltimateCraft.LOGGER.info("Registering item groups for " + UltimateCraft.MOD_ID);
     }

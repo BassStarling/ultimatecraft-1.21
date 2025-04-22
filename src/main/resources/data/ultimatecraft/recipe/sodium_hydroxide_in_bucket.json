@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ultimatecraft:slaked_lime"
+    },
+    {
+      "item": "ultimatecraft:trona"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:sodium_hydroxide_in_bucket"
+  }
+}

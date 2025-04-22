@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AssemblyBlockEntity extends BlockEntity implements BlockEntityTicker,ImplementedInventory, ExtendedScreenHandlerFactory<BlockPos> {
+public class AssemblyBlockEntity extends BlockEntity implements ImplementedInventory, ExtendedScreenHandlerFactory<BlockPos> {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(1, ItemStack.EMPTY);
 
     public AssemblyBlockEntity(BlockPos pos, BlockState state) {
@@ -81,37 +81,5 @@ public class AssemblyBlockEntity extends BlockEntity implements BlockEntityTicke
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
         return new AssemblyScreenHandler(syncId,playerInventory, this.pos);
-    }
-
-    @Override
-    public void tick(World world, BlockPos pos, BlockState state, BlockEntity blockEntity, AssemblyBlockEntity be) {
-        System.out.println("TICKING at " + pos);
-        if (world.isClient()) return;
-
-        ItemStack internalStack = be.getInventory().getFirst(); // スロット内のアイテムA
-
-        if (internalStack.getItem() == ModItems.ALUMINIUM_ALLOY) {
-            List<ItemEntity> itemsAbove = world.getEntitiesByClass(
-                    ItemEntity.class,
-                    new Box(pos.up()),
-                    itemEntity -> itemEntity.getStack().getItem() == ModItems.ALUMINIUM_ALLOY
-            );
-
-            if (!itemsAbove.isEmpty()) {
-                // A → C に変換
-                be.getInventory().set(0, new ItemStack(ModItems.PIPE));
-                // Bを消す（1個）
-                ItemEntity bItemEntity = itemsAbove.getFirst();
-                ItemStack stack = bItemEntity.getStack();
-                stack.decrement(1);
-                if (stack.isEmpty()) {
-                    bItemEntity.discard();
-                }
-            }
-        }
-    }
-
-    @Override
-    public void tick(World world, BlockPos pos, BlockState state, BlockEntity blockEntity) {
     }
 }

@@ -1,7 +1,19 @@
 {
   "variants": {
-    "":{
+    "facing=north": {
       "model": "ultimatecraft:block/strainer"
+    },
+    "facing=east": {
+      "model": "ultimatecraft:block/strainer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ultimatecraft:block/strainer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ultimatecraft:block/strainer",
+      "y": 270
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ultimatecraft:sodium_hydroxide_in_bucket"
+    },
+    {
+      "item": "ultimatecraft:raw_bauxite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:sodium_hydroxide_in_bucket"
+  }
+}

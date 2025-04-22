@@ -1,10 +1,7 @@
 package net.basssterling.ultimatecraft.block;
 
 import net.basssterling.ultimatecraft.UltimateCraft;
-import net.basssterling.ultimatecraft.block.custom.AssemblyTable;
-import net.basssterling.ultimatecraft.block.custom.Crusher;
-import net.basssterling.ultimatecraft.block.custom.MachiningBlock;
-import net.basssterling.ultimatecraft.block.custom.Sifter;
+import net.basssterling.ultimatecraft.block.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -86,16 +83,7 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.TUFF)));
 
     public static final Block STRAINER = registerBlock("strainer",
-            new Block(AbstractBlock.Settings.create().strength(2f)
-                    .requiresTool()){
-                @Override
-                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
-                    tooltip.add(Text.translatable("tooltip.ultimatecraft.strainer.tooltip"));
-                    super.appendTooltip(stack, context, tooltip, options);
-                }});
-
-    public static  final Block TESTBLOCK = registerBlock("testblock",
-            new Block(AbstractBlock.Settings.create().strength(2f)
+            new StrainerBlock(AbstractBlock.Settings.create().strength(2f)
                     .requiresTool()){
                 @Override
                 public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {

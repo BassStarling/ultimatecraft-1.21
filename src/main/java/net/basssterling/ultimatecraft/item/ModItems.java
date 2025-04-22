@@ -14,10 +14,48 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
+    public static final Item MELTED_BAUXITE_IN_BUCKET = registerItem("melted_bauxite_in_bucket",new Item(new Item.Settings()));
+
+    public static final Item ALUMINIUM_OXIDE = registerItem("aluminium_oxide",new Item(new Item.Settings()));
+
+    public static final Item ALUMINIUM_HYDROXIDE = registerItem("aluminium_hydroxide",new Item(new Item.Settings()));
+
+    public static final Item SODIUM_HYDROXIDE_IN_BUCKET = registerItem("sodium_hydroxide_in_bucket",new Item(new Item.Settings()));
+
+    public static final Item CRYOLITE = registerItem("cryolite",new Item(new Item.Settings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.cryolight"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.cryolight"));
+            }
+        }
+    });
+
+    public static final Item TEMPORARY_ITEM_F = registerItem("temporary_item_f",new Item(new Item.Settings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.temp_item_f.shiftdown"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.temp_item_f.shiftdown.0"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.temp_item_f.shiftdown.1"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.temp_item_f.shiftdown.2"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.temp_item_f"));
+                tooltip.add(Text.translatable("tooltip.ultimatecraft.bauxite.1"));
+            }
+        }
+    });
+
+    public static final Item PURE_SODIUM_ALUMINATE = registerItem("pure_sodium_aluminate",new Item(new Item.Settings()));
+
+    public static final Item SODIUM_ALUMINATE = registerItem("sodium_aluminate",new Item(new Item.Settings()));
+
     public static final Item GHASTGUN = registerItem("ghastgun",new BowItem(new Item.Settings().maxDamage(100)));
 
     public static final Item YARI = registerItem("yari",new SwordItem(ModToolMaterials.ALUMINIUM,new Item.Settings()
-            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ALUMINIUM,10,-3.0f))));
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ALUMINIUM,1,3.9f))));
 
     public static final Item RAW_BAUXITE = registerItem("raw_bauxite",new Item(new Item.Settings()) {
         @Override
