@@ -1,9 +1,7 @@
 package net.basssterling.ultimatecraft.util;
 
-import net.basssterling.ultimatecraft.UltimateCraft;
 import net.basssterling.ultimatecraft.item.ModItems;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
-import net.minecraft.component.type.CustomModelDataComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;

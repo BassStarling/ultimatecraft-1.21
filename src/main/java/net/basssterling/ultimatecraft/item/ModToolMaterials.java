@@ -3,10 +3,8 @@ package net.basssterling.ultimatecraft.item;
 import com.google.common.base.Suppliers;
 import net.basssterling.ultimatecraft.util.ModTags;
 import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Supplier;
@@ -22,7 +20,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(
+    ModToolMaterials(
             final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed,
             final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
@@ -60,6 +58,6 @@ public enum ModToolMaterials implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient) this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }

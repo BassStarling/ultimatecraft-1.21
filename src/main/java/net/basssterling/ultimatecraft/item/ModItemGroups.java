@@ -121,6 +121,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ALUMINIUM_HYDROXIDE);
                         entries.add(ModItems.TEMPORARY_ITEM_F);
                         entries.add(ModItems.MELTED_BAUXITE_IN_BUCKET);
+                        entries.add(ModItems.CRYOLITE);
                     })
                     .build());
     public static final ItemGroup UCTAB_GROUPS = Registry.register(Registries.ITEM_GROUP,

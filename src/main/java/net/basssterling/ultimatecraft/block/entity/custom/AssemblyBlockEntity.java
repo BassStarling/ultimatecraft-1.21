@@ -2,13 +2,10 @@ package net.basssterling.ultimatecraft.block.entity.custom;
 
 import net.basssterling.ultimatecraft.block.entity.ImplementedInventory;
 import net.basssterling.ultimatecraft.block.entity.ModBlockEntities;
-import net.basssterling.ultimatecraft.item.ModItems;
 import net.basssterling.ultimatecraft.screen.custom.AssemblyScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityTicker;
-import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
@@ -23,11 +20,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Box;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 public class AssemblyBlockEntity extends BlockEntity implements ImplementedInventory, ExtendedScreenHandlerFactory<BlockPos> {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(1, ItemStack.EMPTY);
