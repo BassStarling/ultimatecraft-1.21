@@ -116,12 +116,14 @@ public class ModItemGroups {
                         entries.add(ModItems.GHASTGUN);
                         entries.add(ModItems.PURE_SODIUM_ALUMINATE);
                         entries.add(ModItems.SODIUM_ALUMINATE);
-                        entries.add(ModItems.SODIUM_HYDROXIDE_IN_BUCKET);
+                        entries.add(ModItems.SODIUM_HYDROXIDE_BUCKET);
                         entries.add(ModItems.ALUMINIUM_OXIDE);
                         entries.add(ModItems.ALUMINIUM_HYDROXIDE);
                         entries.add(ModItems.TEMPORARY_ITEM_F);
                         entries.add(ModItems.MELTED_BAUXITE_IN_BUCKET);
                         entries.add(ModItems.CRYOLITE);
+                        entries.add(ModItems.ENGIN_CYLINDER);
+                        entries.add(ModBlocks.HEATING_AND_PRESSING_EQUIPMENT);
                     })
                     .build());
     public static final ItemGroup UCTAB_GROUPS = Registry.register(Registries.ITEM_GROUP,

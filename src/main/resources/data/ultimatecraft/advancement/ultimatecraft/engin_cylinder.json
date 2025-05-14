@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "ultimatecraft:engin_cylinder",
+      "count": 1
+    },
+    "title": {
+      "translate":"advancement.engin.ultimatecraft.title"
+    },
+    "description": {
+      "translate": "advancement.engin.ultimatecraft.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ultimatecraft:ultimatecraft/aluminium",
+  "criteria": {
+    "engin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatecraft:engin_cylinder"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "engin"
+    ]
+  ]
+}

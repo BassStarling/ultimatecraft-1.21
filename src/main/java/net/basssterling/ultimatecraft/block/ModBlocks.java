@@ -3,10 +3,7 @@ package net.basssterling.ultimatecraft.block;
 import net.basssterling.ultimatecraft.UltimateCraft;
 import net.basssterling.ultimatecraft.block.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.block.*;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -23,6 +20,10 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import java.util.List;
 
 public class ModBlocks {
+    public static final Block HEATING_AND_PRESSING_EQUIPMENT = registerBlock("heating_and_pressing_equipment",
+            new HaP_Equipment(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
     public static final Block BAUXITE_ORE = registerBlock("bauxite_ore",
             new Block(AbstractBlock.Settings.create().strength(2f)
                     .requiresTool()) {

@@ -3,6 +3,9 @@ package net.basssterling.ultimatecraft.block.entity.custom;
 import net.basssterling.ultimatecraft.block.entity.ImplementedInventory;
 import net.basssterling.ultimatecraft.block.entity.ModBlockEntities;
 import net.basssterling.ultimatecraft.item.ModItems;
+import net.basssterling.ultimatecraft.recipe.ModRecipes;
+import net.basssterling.ultimatecraft.recipe.StrainerRecipe;
+import net.basssterling.ultimatecraft.recipe.StrainerRecipeInput;
 import net.basssterling.ultimatecraft.screen.custom.StrainerScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -10,12 +13,14 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.Inventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -25,6 +30,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class StrainerBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
@@ -120,7 +127,9 @@ public class StrainerBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.PURE_SODIUM_ALUMINATE);
+        Optional<RecipeEntry<StrainerRecipe>> recipe = getCurrentRecipe();
+
+        ItemStack output = recipe.get().value().output();
 
         this.removeStack(INPUT_SLOT, 1);
         this.setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -136,11 +145,17 @@ public class StrainerBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private boolean hasRecipe() {
-        Item input = ModItems.SODIUM_ALUMINATE;
-        ItemStack output = new ItemStack(ModItems.PURE_SODIUM_ALUMINATE);
+        Optional<RecipeEntry<StrainerRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty())
+            return false;
 
-        return this.getStack(INPUT_SLOT).isOf(input) &&
-                canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        ItemStack output = recipe.get().value().output();
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeEntry<StrainerRecipe>> getCurrentRecipe() {
+        return this.getWorld().getRecipeManager()
+                .getFirstMatch(ModRecipes.STRAINER_TYPE, new StrainerRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

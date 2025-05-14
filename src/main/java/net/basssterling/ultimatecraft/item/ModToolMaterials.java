@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     ALUMINIUM(ModTags.Blocks.INCORRECT_FOR_ALUMINIUM_TOOL,
-            516,0.0F,1.0F,22,() ->Ingredient.ofItems(ModItems.ALUMINIUM_ALLOY));
+            1516,1.0F,2.0F,22,() ->Ingredient.ofItems(ModItems.ALUMINIUM_ALLOY));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

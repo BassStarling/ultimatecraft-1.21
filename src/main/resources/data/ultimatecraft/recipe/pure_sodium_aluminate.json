@@ -1,0 +1,10 @@
+{
+  "type": "ultimatecraft:strainer",
+  "ingredient": {
+    "item": "ultimatecraft:sodium_aluminate"
+  },
+  "result": {
+    "count": 1,
+    "id": "ultimatecraft:pure_sodium_aluminate"
+  }
+}
